@@ -128,7 +128,7 @@ int system(const char *command) { // 가짜 system
     {
         printf("[SAFE] Blocked dangerous system() call: %s\n", command);
         errno = EPERM; // 권한 없음
-	return -1; // 실패 반환
+	    return -1; // 실패 반환
     }
 
     // 나머지는 원본
